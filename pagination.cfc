@@ -4,7 +4,7 @@
 	<!-- ! Template variable.. can be modify by the init function or setTemplate   -->
 	<!-- ========================================================================= -->
 	<cfset wrapperStart = '<div class="pagination"><ul>'>
-	<cfset wrapperENd = '</ul></div>'>
+	<cfset wrapperEnd = '</ul></div>'>
 	<cfset pageStart = '<li> '>
 	<cfset pageEnd = ' </li>'>
 	<cfset previousStart = '<li class="previous">'>

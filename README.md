@@ -85,7 +85,7 @@ Usage
 &lt;cfoutput&gt;    
 my blog query output here   
 &lt;/cfoutput&gt;  
-&lt;cfoutput&gt;#obj.createLinks()&lt;/cfoutput&gt;
+&lt;cfoutput&gt;#obj.createLinks()#&lt;/cfoutput&gt;
 </code>
 
 

@@ -92,6 +92,24 @@
 	</cffunction>
 	
 	<!-- ============================================================================================================================ -->
+	<!-- ! function setPagination																									  -->
+	<!--  Setup the value for the pagination																		  				  -->
+	<!-- ============================================================================================================================ -->
+	<cffunction name="setPagination" access="public" displayname="Set Pagination" hint="Setup the value for the pagination" output="no">
+		<cfargument name="perPage" required="true">
+		<cfargument name="currentPage" required="true">
+		<cfargument name="totalItems" required="true">
+		<cfscript>
+			variables.perPage = arguments.perPage;
+			variables.currentPage = arguments.currentPage;
+			variables.totalItems = arguments.totalItems;
+			initialize();	
+			return this;
+		</cfscript>
+	</cffunction>
+
+	
+	<!-- ============================================================================================================================ -->
 	<!-- ! function initialize																										  -->
 	<!--  do all the calculation for the pagination creation 																		  -->
 	<!-- ============================================================================================================================ -->

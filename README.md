@@ -43,6 +43,13 @@ setTemplate
 #### required argument
 * Template type struct  
 
+setPagination
+-----------------
+#### required argument
+* perPage type numeric
+* currentPage type numeric
+* totalItems type numeric  
+
 createLinks
 -----------------
 
@@ -76,7 +83,11 @@ Usage
 <code>  
 &lt;cfset obj = createObject('component','pagination').init(config)&gt;  
 </code>  
-<code>
+or use  
+<code>  
+&lt;cfset obj = createObject('component','pagination').setPagination(2,variables.currentPage,qCount.count)&gt;  
+</code> 
+<code>  
 &lt;cfquery name="posts" dataSource="myBlog"&gt;   
 	SELECT * FROM blog LIMIT #pagi.getOffset#,#pagi.getPerPage()#  
 &lt;/cfquery&gt; 
